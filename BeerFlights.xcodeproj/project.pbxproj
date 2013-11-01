@@ -14,6 +14,7 @@
 		272FE45D182402670046C262 /* add-beer-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 272FE45C182402670046C262 /* add-beer-icon.png */; };
 		272FE460182407D30046C262 /* selected-beer-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 272FE45E182407D30046C262 /* selected-beer-icon.png */; };
 		272FE461182407D30046C262 /* selected-beer-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 272FE45F182407D30046C262 /* selected-beer-icon@2x.png */; };
+		272FE46418240D140046C262 /* BeerFlightListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 272FE46318240D140046C262 /* BeerFlightListVC.m */; };
 		2753FAC91823038500DFBF12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2753FAC81823038500DFBF12 /* Foundation.framework */; };
 		2753FACB1823038500DFBF12 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2753FACA1823038500DFBF12 /* CoreGraphics.framework */; };
 		2753FACD1823038500DFBF12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2753FACC1823038500DFBF12 /* UIKit.framework */; };
@@ -54,6 +55,8 @@
 		272FE45C182402670046C262 /* add-beer-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-beer-icon.png"; sourceTree = "<group>"; };
 		272FE45E182407D30046C262 /* selected-beer-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selected-beer-icon.png"; sourceTree = "<group>"; };
 		272FE45F182407D30046C262 /* selected-beer-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selected-beer-icon@2x.png"; sourceTree = "<group>"; };
+		272FE46218240D140046C262 /* BeerFlightListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerFlightListVC.h; sourceTree = "<group>"; };
+		272FE46318240D140046C262 /* BeerFlightListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerFlightListVC.m; sourceTree = "<group>"; };
 		2753FAC51823038500DFBF12 /* BeerFlights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerFlights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2753FAC81823038500DFBF12 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2753FACA1823038500DFBF12 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -156,6 +159,8 @@
 				272FE4571823FAEF0046C262 /* BeerSelectionTVC.m */,
 				272FE459182401990046C262 /* BeerSelectionCell.h */,
 				272FE45A182401990046C262 /* BeerSelectionCell.m */,
+				272FE46218240D140046C262 /* BeerFlightListVC.h */,
+				272FE46318240D140046C262 /* BeerFlightListVC.m */,
 			);
 			path = BeerFlights;
 			sourceTree = "<group>";
@@ -335,6 +340,7 @@
 				272FE4551823F3FD0046C262 /* FlightSorter.m in Sources */,
 				2753FAD51823038500DFBF12 /* main.m in Sources */,
 				272FE45B182401990046C262 /* BeerSelectionCell.m in Sources */,
+				272FE46418240D140046C262 /* BeerFlightListVC.m in Sources */,
 				27F0557D1823E11A00A51806 /* Beer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

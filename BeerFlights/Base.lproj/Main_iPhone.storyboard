@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="1mR-Ef-fr7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
@@ -23,7 +23,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="0f1-Gf-i7n" kind="push" id="Dq2-HS-zhz"/>
+                                    <segue destination="V7M-tS-kHa" kind="modal" id="Dq2-HS-zhz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -35,6 +35,44 @@
             </objects>
             <point key="canvasLocation" x="924" y="22"/>
         </scene>
+        <!--Beer Flight ListVC-->
+        <scene sceneID="YlR-DV-zau">
+            <objects>
+                <viewController id="mVQ-Tu-ASL" customClass="BeerFlightListVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WYd-en-O6x"/>
+                        <viewControllerLayoutGuide type="bottom" id="sjn-wS-UnK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bZH-K1-Cdq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Serve beers in this order:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="226" translatesAutoresizingMaskIntoConstraints="NO" id="UKA-g0-njE">
+                                <rect key="frame" x="20" y="77" width="226" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q8A-gV-6DW">
+                                <rect key="frame" x="20" y="113" width="280" height="435"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5AP-lH-jpw"/>
+                    <connections>
+                        <outlet property="flightTextView" destination="q8A-gV-6DW" id="mhx-7k-WMG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zAL-x2-5t8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2459" y="223"/>
+        </scene>
         <!--Beer SelectionTVC-->
         <scene sceneID="AqF-fP-Daz">
             <objects>
@@ -43,9 +81,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="nas-Jr-fIJ">
+                            <rect key="frame" x="0.0" y="64" width="320" height="52"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oM-P9-dvH">
+                                    <rect key="frame" x="81" y="11" width="158" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Show Serving Order">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <segue destination="mVQ-Tu-ASL" kind="push" identifier="ShowSortedFlightList" id="67X-IN-8Lc"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FlightBeerCell" rowHeight="49" id="NXA-1t-QBo" customClass="BeerSelectionCell">
-                                <rect key="frame" x="0.0" y="86" width="320" height="49"/>
+                                <rect key="frame" x="0.0" y="138" width="320" height="49"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NXA-1t-QBo" id="PLd-Cv-N7x">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
@@ -79,25 +134,26 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RD6-Z3-Uk4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1503" y="223"/>
+            <point key="canvasLocation" x="2029" y="223"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="jmP-JZ-tap">
+        <scene sceneID="DvI-9I-sXi">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1mR-Ef-fr7" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V7M-tS-kHa" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TJQ-SE-eOk">
+                    <navigationItem key="navigationItem" id="qzl-al-uiC"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YSb-H1-Ndh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="zch-Ga-x6V"/>
+                        <segue destination="0f1-Gf-i7n" kind="relationship" relationship="rootViewController" id="Wr4-Ib-hlP"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="83T-ZN-qFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="du0-Td-euT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="713" y="891"/>
+            <point key="canvasLocation" x="1503" y="223"/>
         </scene>
     </scenes>
     <resources>

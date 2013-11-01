@@ -9,6 +9,7 @@
 #import "BeerSelectionTVC.h"
 #import "Beer.h"
 #import "BeerSelectionCell.h"
+#import "BeerFlightListVC.h"
 
 @interface BeerSelectionTVC ()
 
@@ -76,6 +77,13 @@
 
     BeerSelectionCell *cell = (BeerSelectionCell *) [self.tableView cellForRowAtIndexPath:indexPath];
     [cell toggleSelected:addingAsSelected];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"ShowSortedFlightList"]) {
+        BeerFlightListVC *vc = [segue destinationViewController];
+        vc.beersForFlight = self.selectedBeers;
+    }
 }
 
 /*
