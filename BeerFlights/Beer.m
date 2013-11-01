@@ -24,6 +24,13 @@
     return [self.tastingStyles containsObject:[NSNumber numberWithInt:style]];
 }
 
+- (id)initWithName:(NSString *)string andTastingStyles:(NSArray *)styles {
+    self = [super init];
+    self.name = string;
+    self.tastingStyles = styles;
+    return self;
+}
+
 - (float)styleScore {
     float totalScore = 0;
     for(NSNumber *tastingStyle in self.tastingStyles){

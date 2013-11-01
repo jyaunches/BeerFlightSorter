@@ -30,6 +30,12 @@ SPEC_BEGIN(BeerSpec)
                 
                 [[theValue(flight.styleScore) should] equal:3.667 withDelta:0.001];
             });
+
+            it(@"should have a name", ^{
+                Beer *flight = [[Beer alloc] initWithName:@"Amber" andTastingStyles:[NSArray arrayWithObjects:[NSNumber numberWithInt:AMBER], nil]];
+
+                [[theValue(flight.name) should] equal:theValue(@"Amber")];
+            });
         });
 
         SPEC_END

@@ -22,9 +22,13 @@ typedef enum {
 
 @interface Beer : NSObject
 
+@property(nonatomic, copy) NSString *name;
+
 - (id)initWithTastingStyles:(NSArray *)tastingStyles;
 
 - (BOOL)hasStyle:(TastingStyle)style;
+
+- (id)initWithName:(NSString *)string andTastingStyles:(NSArray *)styles;
 
 - (float)styleScore;
 @end
