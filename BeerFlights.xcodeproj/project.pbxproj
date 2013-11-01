@@ -16,6 +16,7 @@
 		272FE461182407D30046C262 /* selected-beer-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 272FE45F182407D30046C262 /* selected-beer-icon@2x.png */; };
 		272FE46418240D140046C262 /* BeerFlightListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 272FE46318240D140046C262 /* BeerFlightListVC.m */; };
 		272FE4661824124B0046C262 /* beer-flights.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 272FE4651824124B0046C262 /* beer-flights.jpg */; };
+		272FE46C182416DB0046C262 /* add-beer-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 272FE46B182416DB0046C262 /* add-beer-icon@2x.png */; };
 		2753FAC91823038500DFBF12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2753FAC81823038500DFBF12 /* Foundation.framework */; };
 		2753FACB1823038500DFBF12 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2753FACA1823038500DFBF12 /* CoreGraphics.framework */; };
 		2753FACD1823038500DFBF12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2753FACC1823038500DFBF12 /* UIKit.framework */; };
@@ -23,8 +24,6 @@
 		2753FAD51823038500DFBF12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2753FAD41823038500DFBF12 /* main.m */; };
 		2753FAD91823038500DFBF12 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2753FAD81823038500DFBF12 /* AppDelegate.m */; };
 		2753FADC1823038500DFBF12 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2753FADA1823038500DFBF12 /* Main_iPhone.storyboard */; };
-		2753FADF1823038500DFBF12 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2753FADD1823038500DFBF12 /* Main_iPad.storyboard */; };
-		2753FAE21823038500DFBF12 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2753FAE11823038500DFBF12 /* ViewController.m */; };
 		2753FAE41823038500DFBF12 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2753FAE31823038500DFBF12 /* Images.xcassets */; };
 		2753FAEB1823038600DFBF12 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2753FAEA1823038600DFBF12 /* XCTest.framework */; };
 		2753FAEC1823038600DFBF12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2753FAC81823038500DFBF12 /* Foundation.framework */; };
@@ -59,6 +58,7 @@
 		272FE46218240D140046C262 /* BeerFlightListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerFlightListVC.h; sourceTree = "<group>"; };
 		272FE46318240D140046C262 /* BeerFlightListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerFlightListVC.m; sourceTree = "<group>"; };
 		272FE4651824124B0046C262 /* beer-flights.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "beer-flights.jpg"; sourceTree = "<group>"; };
+		272FE46B182416DB0046C262 /* add-beer-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-beer-icon@2x.png"; sourceTree = "<group>"; };
 		2753FAC51823038500DFBF12 /* BeerFlights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerFlights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2753FAC81823038500DFBF12 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2753FACA1823038500DFBF12 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -70,9 +70,6 @@
 		2753FAD71823038500DFBF12 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2753FAD81823038500DFBF12 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2753FADB1823038500DFBF12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		2753FADE1823038500DFBF12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		2753FAE01823038500DFBF12 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2753FAE11823038500DFBF12 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2753FAE31823038500DFBF12 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2753FAE91823038600DFBF12 /* BeerFlightsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeerFlightsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2753FAEA1823038600DFBF12 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -110,6 +107,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		272FE467182416860046C262 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				272FE4561823FAEF0046C262 /* BeerSelectionTVC.h */,
+				272FE4571823FAEF0046C262 /* BeerSelectionTVC.m */,
+				272FE46218240D140046C262 /* BeerFlightListVC.h */,
+				272FE46318240D140046C262 /* BeerFlightListVC.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		272FE4681824169B0046C262 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				272FE459182401990046C262 /* BeerSelectionCell.h */,
+				272FE45A182401990046C262 /* BeerSelectionCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		272FE469182416A60046C262 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				27F0557B1823E11A00A51806 /* Beer.h */,
+				27F0557C1823E11A00A51806 /* Beer.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		272FE46A182416B80046C262 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				272FE4531823F3FD0046C262 /* FlightSorter.h */,
+				272FE4541823F3FD0046C262 /* FlightSorter.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		2753FABC1823038500DFBF12 = {
 			isa = PBXGroup;
 			children = (
@@ -145,24 +180,15 @@
 		2753FACE1823038500DFBF12 /* BeerFlights */ = {
 			isa = PBXGroup;
 			children = (
+				272FE469182416A60046C262 /* Models */,
+				272FE4681824169B0046C262 /* Views */,
+				272FE467182416860046C262 /* Controllers */,
+				272FE46A182416B80046C262 /* Utilities */,
 				2753FAD71823038500DFBF12 /* AppDelegate.h */,
 				2753FAD81823038500DFBF12 /* AppDelegate.m */,
 				2753FADA1823038500DFBF12 /* Main_iPhone.storyboard */,
-				2753FADD1823038500DFBF12 /* Main_iPad.storyboard */,
-				2753FAE01823038500DFBF12 /* ViewController.h */,
-				2753FAE11823038500DFBF12 /* ViewController.m */,
 				2753FAE31823038500DFBF12 /* Images.xcassets */,
 				2753FACF1823038500DFBF12 /* Supporting Files */,
-				27F0557B1823E11A00A51806 /* Beer.h */,
-				27F0557C1823E11A00A51806 /* Beer.m */,
-				272FE4531823F3FD0046C262 /* FlightSorter.h */,
-				272FE4541823F3FD0046C262 /* FlightSorter.m */,
-				272FE4561823FAEF0046C262 /* BeerSelectionTVC.h */,
-				272FE4571823FAEF0046C262 /* BeerSelectionTVC.m */,
-				272FE459182401990046C262 /* BeerSelectionCell.h */,
-				272FE45A182401990046C262 /* BeerSelectionCell.m */,
-				272FE46218240D140046C262 /* BeerFlightListVC.h */,
-				272FE46318240D140046C262 /* BeerFlightListVC.m */,
 			);
 			path = BeerFlights;
 			sourceTree = "<group>";
@@ -170,6 +196,7 @@
 		2753FACF1823038500DFBF12 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				272FE46B182416DB0046C262 /* add-beer-icon@2x.png */,
 				272FE4651824124B0046C262 /* beer-flights.jpg */,
 				272FE45E182407D30046C262 /* selected-beer-icon.png */,
 				272FE45F182407D30046C262 /* selected-beer-icon@2x.png */,
@@ -186,8 +213,8 @@
 			isa = PBXGroup;
 			children = (
 				2753FAF61823038600DFBF12 /* BeerTests.m */,
-				2753FAF11823038600DFBF12 /* Supporting Files */,
 				272FE4511823F1FE0046C262 /* FlightSorterTests.m */,
+				2753FAF11823038600DFBF12 /* Supporting Files */,
 			);
 			path = BeerFlightsTests;
 			sourceTree = "<group>";
@@ -279,10 +306,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2753FADF1823038500DFBF12 /* Main_iPad.storyboard in Resources */,
 				272FE45D182402670046C262 /* add-beer-icon.png in Resources */,
 				272FE461182407D30046C262 /* selected-beer-icon@2x.png in Resources */,
 				272FE4661824124B0046C262 /* beer-flights.jpg in Resources */,
+				272FE46C182416DB0046C262 /* add-beer-icon@2x.png in Resources */,
 				2753FAE41823038500DFBF12 /* Images.xcassets in Resources */,
 				272FE460182407D30046C262 /* selected-beer-icon.png in Resources */,
 				2753FADC1823038500DFBF12 /* Main_iPhone.storyboard in Resources */,
@@ -338,7 +365,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2753FAE21823038500DFBF12 /* ViewController.m in Sources */,
 				2753FAD91823038500DFBF12 /* AppDelegate.m in Sources */,
 				272FE4581823FAEF0046C262 /* BeerSelectionTVC.m in Sources */,
 				272FE4551823F3FD0046C262 /* FlightSorter.m in Sources */,
@@ -383,14 +409,6 @@
 				2753FADB1823038500DFBF12 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		2753FADD1823038500DFBF12 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2753FADE1823038500DFBF12 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		2753FAF31823038600DFBF12 /* InfoPlist.strings */ = {
