@@ -13,6 +13,7 @@
 @interface BeerSelectionTVC ()
 
 @property(nonatomic, strong) NSArray *beers;
+@property(nonatomic, strong) NSMutableArray * selectedBeers;
 @end
 
 @implementation BeerSelectionTVC
@@ -39,6 +40,7 @@
                                                                                [NSNumber numberWithInt:SAISON], nil]];
     
     self.beers = [NSArray arrayWithObjects:fruitStout, sourFruityWheat, lagerAmer, wheatLagerSaison, sourSaison, nil];
+    self.selectedBeers = [NSMutableArray array];
 }
 
 
@@ -58,8 +60,22 @@
 
     Beer *beer = [self.beers objectAtIndex:[indexPath row]];
     cell.beerName.text = beer.name;
+    [cell toggleSelected:[self.selectedBeers containsObject:beer]];
 
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    Beer *beerSelected = [self.beers objectAtIndex:[indexPath row]];
+    BOOL addingAsSelected = ![self.selectedBeers containsObject:beerSelected];
+    if(addingAsSelected){
+        [self.selectedBeers addObject:beerSelected];
+    } else{
+        [self.selectedBeers removeObject:beerSelected];
+    }
+
+    BeerSelectionCell *cell = (BeerSelectionCell *) [self.tableView cellForRowAtIndexPath:indexPath];
+    [cell toggleSelected:addingAsSelected];
 }
 
 /*

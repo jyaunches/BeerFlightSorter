@@ -51,16 +51,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJa-sS-N0q">
-                                            <rect key="frame" x="258" y="10" width="50" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" image="add-beer-icon.png">
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="addBeerClicked:" destination="NXA-1t-QBo" eventType="touchUpInside" id="gSd-tc-BZP"/>
-                                            </connections>
-                                        </button>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beer name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbZ-F5-6p8">
                                             <rect key="frame" x="20" y="13" width="175" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -68,11 +58,15 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="add-beer-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="uOi-Ie-sfi">
+                                            <rect key="frame" x="262" y="9" width="50" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="addBeerButton" destination="MJa-sS-N0q" id="DNE-gi-4y2"/>
                                     <outlet property="beerName" destination="fbZ-F5-6p8" id="DKz-Ru-yUh"/>
+                                    <outlet property="beerSelectedIcon" destination="uOi-Ie-sfi" id="t1Q-Zg-D3I"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

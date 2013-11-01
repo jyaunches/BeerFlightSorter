@@ -10,6 +10,8 @@
 
 @interface BeerSelectionCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *beerName;
-@property (weak, nonatomic) IBOutlet UIButton *addBeerButton;
+@property (weak, nonatomic) IBOutlet UIImageView *beerSelectedIcon;
 
+
+- (void)toggleSelected:(BOOL)selected;
 @end

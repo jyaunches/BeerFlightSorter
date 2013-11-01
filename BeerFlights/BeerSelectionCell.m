@@ -10,8 +10,13 @@
 
 @implementation BeerSelectionCell
 
-- (IBAction)addBeerClicked:(id)sender {
-    NSLog(@"Add beer clicked");
+- (void)toggleSelected:(BOOL)selected {
+    if(selected){
+       self.beerName.textColor = [UIColor colorWithRed:(143/255.0)  green:(143/255.0)  blue:(143/255.0)  alpha:1.0];
+       [self.beerSelectedIcon setImage:[UIImage imageNamed:@"selected-beer-icon.png"]];
+   }else{
+       self.beerName.textColor = [UIColor blackColor];
+       [self.beerSelectedIcon setImage:[UIImage imageNamed:@"add-beer-icon.png"]];
+   }
 }
-
 @end
