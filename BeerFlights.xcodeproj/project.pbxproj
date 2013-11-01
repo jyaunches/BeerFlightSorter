@@ -22,6 +22,7 @@
 		2753FAED1823038600DFBF12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2753FACC1823038500DFBF12 /* UIKit.framework */; };
 		2753FAF51823038600DFBF12 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2753FAF31823038600DFBF12 /* InfoPlist.strings */; };
 		2753FAF71823038600DFBF12 /* BeerFlightsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2753FAF61823038600DFBF12 /* BeerFlightsTests.m */; };
+		27F0557D1823E11A00A51806 /* BeerFlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F0557C1823E11A00A51806 /* BeerFlight.m */; };
 		EF6764140C924A09BC87BFD8 /* libPods-BeerFlightsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC6515F5F44445084FCE22C /* libPods-BeerFlightsTests.a */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,8 @@
 		2753FAF21823038600DFBF12 /* BeerFlightsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeerFlightsTests-Info.plist"; sourceTree = "<group>"; };
 		2753FAF41823038600DFBF12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2753FAF61823038600DFBF12 /* BeerFlightsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeerFlightsTests.m; sourceTree = "<group>"; };
+		27F0557B1823E11A00A51806 /* BeerFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeerFlight.h; sourceTree = "<group>"; };
+		27F0557C1823E11A00A51806 /* BeerFlight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeerFlight.m; sourceTree = "<group>"; };
 		442B600AC0E4496085B2BF65 /* Pods-BeerFlightsTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerFlightsTests.xcconfig"; path = "Pods/Pods-BeerFlightsTests.xcconfig"; sourceTree = "<group>"; };
 		EFC6515F5F44445084FCE22C /* libPods-BeerFlightsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeerFlightsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -128,6 +131,8 @@
 				2753FAE11823038500DFBF12 /* ViewController.m */,
 				2753FAE31823038500DFBF12 /* Images.xcassets */,
 				2753FACF1823038500DFBF12 /* Supporting Files */,
+				27F0557B1823E11A00A51806 /* BeerFlight.h */,
+				27F0557C1823E11A00A51806 /* BeerFlight.m */,
 			);
 			path = BeerFlights;
 			sourceTree = "<group>";
@@ -211,7 +216,7 @@
 				ORGANIZATIONNAME = "Julietta Yaunches";
 				TargetAttributes = {
 					2753FAE81823038600DFBF12 = {
-						TestTargetID = 2753FAC41823038500DFBF12;
+						TestTargetID = 2753FAC41823038500DFBF12 /* BeerFlights */;
 					};
 				};
 			};
@@ -297,6 +302,7 @@
 				2753FAE21823038500DFBF12 /* ViewController.m in Sources */,
 				2753FAD91823038500DFBF12 /* AppDelegate.m in Sources */,
 				2753FAD51823038500DFBF12 /* main.m in Sources */,
+				27F0557D1823E11A00A51806 /* BeerFlight.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
