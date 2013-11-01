@@ -1,0 +1,29 @@
+BEER FLIGHT SORTER APP
+
+Overview ------------------
+
+At it's core, this app sorts beers based on their styles. A beer can have many styles so to determine how to sort a selection of beer, each beer is given a score based on it's styles. The score is calculated by assigning each style a score (relative to it's position in the tasting order) and averaging the scores across all styles assigned to a given beer.
+
+Tasting Order is as follows:
+
+Light(1), Sour(2), Fruity(3), Wheat(4), Lager(5), Amber(6), Saison(7), Stout(8)
+
+Ex. A fruity, wheat, and amber beer would be scored: (3+4+6)/3 = 4.33 
+
+A given list of beers is then sorted by this average score in descending order.
+
+
+App Functionality ---------
+
+The app's features are there to serve a means of testing this sorting algorithm (beyond the unit tests -- see below).
+
+Within the app, you can select any combination of beers from the available list and see the tasting order that those beers should be served in.
+
+Unit Tests ----------------
+
+The unit tests are organized to test the different objects and their responsibilities.
+
+The beer model: knowing it's name, styles, and overall score.
+The beer flight sorter: sorting a varied range of beers based on their score.
+
+NOTE: THIS PROJECT IS USING COCOAPODS. AS SUCH, YOU'LL NEED TO (INSTALL IT IF NECESSARY) AND THEN RUN 'POD INSTALL'. FROM THERE OPEN UP THE PROJECT VIA THE .XCWORKSPACE FILE. AFTER THIS YOU CAN RUN THE TESTS AS USUAL. ENSURE THAT THE BEERFLIGHTS TARGET IS SELECTED AND THAT IT'S USING A SIMULATOR THEN EXECUTE 'CMD-U'.
