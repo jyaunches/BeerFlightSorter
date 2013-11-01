@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Julietta Yaunches. All rights reserved.
 //
 
-#import "BeerFlight.h"
+#import "Beer.h"
 
-@interface BeerFlight ()
+@interface Beer ()
 @property(nonatomic, strong) NSArray *tastingStyles;
 @end
 
-@implementation BeerFlight
+@implementation Beer
 
 - (id)initWithTastingStyles:(NSArray *)tastingStyles {
     self = [super init];

@@ -20,7 +20,7 @@ typedef enum {
 } TastingStyle;
 
 
-@interface BeerFlight : NSObject
+@interface Beer : NSObject
 
 - (id)initWithTastingStyles:(NSArray *)tastingStyles;
 
