@@ -130,7 +130,13 @@
                             <outlet property="delegate" destination="0f1-Gf-i7n" id="LoM-bE-qRA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="ggR-ry-2zt"/>
+                    <navigationItem key="navigationItem" id="ggR-ry-2zt">
+                        <barButtonItem key="rightBarButtonItem" title="Reset" id="mSR-Pi-io1">
+                            <connections>
+                                <action selector="resetClicked:" destination="0f1-Gf-i7n" id="AUc-Sc-USJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RD6-Z3-Uk4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
