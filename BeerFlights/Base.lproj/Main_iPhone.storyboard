@@ -16,8 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beer-flights.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Zif-Bk-y8h">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2X-rf-9o9">
-                                <rect key="frame" x="91" y="269" width="138" height="30"/>
+                                <rect key="frame" x="91" y="163" width="138" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Create Flight">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -26,6 +30,13 @@
                                     <segue destination="V7M-tS-kHa" kind="modal" id="Dq2-HS-zhz"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.64999999999999969" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Julie's beer flight sorter! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="225" translatesAutoresizingMaskIntoConstraints="NO" id="MFI-eq-UQb">
+                                <rect key="frame" x="48" y="59" width="225" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -71,7 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zAL-x2-5t8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2459" y="223"/>
+            <point key="canvasLocation" x="2270" y="22"/>
         </scene>
         <!--Beer SelectionTVC-->
         <scene sceneID="AqF-fP-Daz">
@@ -140,7 +151,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RD6-Z3-Uk4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2029" y="223"/>
+            <point key="canvasLocation" x="1815" y="22"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DvI-9I-sXi">
@@ -159,11 +170,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="du0-Td-euT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1503" y="223"/>
+            <point key="canvasLocation" x="1371" y="22"/>
         </scene>
     </scenes>
     <resources>
         <image name="add-beer-icon.png" width="50" height="30"/>
+        <image name="beer-flights.jpg" width="800" height="1200"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
